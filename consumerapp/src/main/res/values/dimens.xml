@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatarCard">75dp</dimen>
+    <dimen name="paddingAvatar">4dp</dimen>
+    <dimen name="marginCard">8dp</dimen>
+    <dimen name="marginStartItem">16dp</dimen>
+</resources>
