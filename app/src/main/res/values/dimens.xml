@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatarCard">75dp</dimen>
+    <dimen name="paddingAvatar">4dp</dimen>
+    <dimen name="marginCard">8dp</dimen>
+    <dimen name="marginStartItem">16dp</dimen>
+    <dimen name="textItemUsername">14sp</dimen>
+    <dimen name="splashLogo">100dp</dimen>
+    <dimen name="avatarDetail">60dp</dimen>
+    <dimen name="marginDetail">16dp</dimen>
+    <dimen name="widthMenu">80dp</dimen>
+    <dimen name="marginMenu">25dp</dimen>
+    <dimen name="marginIcon">8dp</dimen>
+    <dimen name="icon">18dp</dimen>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="textMenu">14sp</dimen>
+</resources>

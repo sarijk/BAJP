@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart= "@dimen/marginCard"
+    android:layout_marginEnd="@dimen/marginCard"
+    android:layout_marginTop="@dimen/paddingAvatar"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_avatar"
+            android:layout_width="@dimen/avatarCard"
+            android:layout_height="@dimen/avatarCard"
+            android:layout_marginStart="@dimen/marginCard"
+            android:layout_marginTop="@dimen/paddingAvatar"
+            android:layout_marginBottom="@dimen/paddingAvatar"
+            android:padding="@dimen/paddingAvatar"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/item_username"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,MissingClass"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStartItem"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/item_avatar"
+            android:textSize="@dimen/textItemUsername"
+            app:layout_constraintStart_toEndOf="@+id/item_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/username" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

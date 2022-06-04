@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.MoveDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_detail"
+        android:layout_width="@dimen/avatarDetail"
+        android:layout_height="@dimen/avatarDetail"
+        android:layout_marginStart="@dimen/marginDetail"
+        android:layout_marginTop="@dimen/marginDetail"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_menu" />
+
+    <TextView
+        android:id="@+id/repository_text"
+        android:layout_width="@dimen/widthMenu"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/repository"
+        android:textSize="@dimen/textMenu"
+        app:layout_constraintEnd_toStartOf="@id/followers_text"
+        app:layout_constraintTop_toBottomOf="@id/repository_detail" />
+
+    <TextView
+        android:id="@+id/repository_detail"
+        android:layout_width="@dimen/widthMenu"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginDetail"
+        android:layout_marginTop="@dimen/marginMenu"
+        android:gravity="center"
+        android:text="@string/repository_detail"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/followers_detail"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_menu" />
+
+    <TextView
+        android:id="@+id/followers_text"
+        android:layout_width="@dimen/widthMenu"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/followers"
+        android:textSize="@dimen/textMenu"
+        app:layout_constraintEnd_toStartOf="@id/following_text"
+        app:layout_constraintTop_toBottomOf="@id/followers_detail" />
+
+    <TextView
+        android:id="@+id/followers_detail"
+        android:layout_width="@dimen/widthMenu"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMenu"
+        android:gravity="center"
+        android:text="@string/followers_detail"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/following_detail"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_menu" />
+
+    <TextView
+        android:id="@+id/following_text"
+        android:layout_width="@dimen/widthMenu"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginDetail"
+        android:gravity="center"
+        android:text="@string/following"
+        android:textSize="@dimen/textMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/following_detail" />
+
+    <TextView
+        android:id="@+id/following_detail"
+        android:layout_width="@dimen/widthMenu"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMenu"
+        android:layout_marginEnd="@dimen/marginDetail"
+        android:gravity="center"
+        android:text="@string/following_detail"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_menu" />
+
+    <TextView
+        android:id="@+id/name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginDetail"
+        android:layout_marginTop="@dimen/marginDetail"
+        android:text="@string/name"
+        android:textSize="@dimen/textMenu"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_detail" />
+
+    <ImageView
+        android:id="@+id/img_location"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:layout_marginStart="@dimen/marginDetail"
+        android:layout_marginTop="@dimen/marginIcon"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_detail"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/location_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon"
+        android:layout_marginStart="@dimen/marginIcon"
+        android:layout_marginTop="@dimen/marginIcon"
+        android:text="@string/location"
+        android:textSize="@dimen/textMenu"
+        app:layout_constraintStart_toEndOf="@id/img_location"
+        app:layout_constraintTop_toBottomOf="@id/name_detail" />
+
+    <ImageView
+        android:id="@+id/img_company"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:layout_marginStart="@dimen/marginDetail"
+        android:layout_marginTop="@dimen/marginIcon"
+        android:src="@drawable/ic_company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_location"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/company_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon"
+        android:layout_marginStart="@dimen/marginIcon"
+        android:layout_marginTop="@dimen/marginIcon"
+        android:text="@string/company"
+        android:textSize="@dimen/textMenu"
+        app:layout_constraintStart_toEndOf="@id/img_company"
+        app:layout_constraintTop_toBottomOf="@id/location_detail" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/company_detail"
+        app:tabTextAppearance="@style/TabText" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tabs" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/favorite_toggle"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/back_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
